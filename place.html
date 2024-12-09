@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLACE</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.2rem;
+        }
+        .container {
+            min-height: 100vh;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 20px;
+            background: linear-gradient(to right, #000000, #522f00 );
+        }
+        .left-text {
+            flex-basis: 30%;
+        }
+        .heading{
+            font-size: 3rem;
+            color: #ddd;
+            text-align: center;
+        }
+        .subheading{
+            margin-top: 10px;
+            color: #ddd;
+            text-align: center;
+        }
+        .gallery{
+            flex-basis: 60%;
+            display: grid;
+            gap: 8px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 120px;
+        }
+        .box{
+            background-size: cover;
+            background-position: top;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #222;
+            background-blend-mode: hard-light;
+            transition: all 1s ease-in-out;
+            cursor: pointer;
+        }
+        .box:hover{
+            background-color: #999;
+            background-position: center;
+            box-shadow: 0 0 9px #fff;
+        }
+        .row-2{
+            grid-row: span 2;
+        }
+        .col-2{
+            grid-column: span 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <div class="left-text">
+            <h2 class="heading">My Collections</h2>
+            <p class="subheading">When words become unclear, I shall focus with photgraph. When images become inadequate, I shall be content</p>
+        </div> -->
+        <div class="left-text">
+            <h2 class="heading">PLACE</h2>
+        </div>
+        <div class="gallery">
+            <div class="box row-2"  style="background-image: url(place/p.jpg);" ><a href="place/p1.html" style="text-decoration: none; color: #fff;">1</a></div>
+            <div class="box col-2" style="background-image: url(place/p1.jpg); "><a href="place/p2.html" style="text-decoration: none; color: #fff;">2</a></div>
+            <div class="box " style="background-image: url(place/p2.jpg);" ><a href="place/p3.html" style="text-decoration: none; color: #fff;"></a>3</div>
+            <div class="box row-2" style="background-image: url(place/p3.jpg);" ><a href="place/p4.html" style="text-decoration: none; color: #fff;">4</a></div>
+            <div class="box col-2" style="background-image: url(place/p4.jpg);" ><a href="place/p5.html" style="text-decoration: none; color: #fff;">5</a></div>
+            <div class="box" style="background-image: url(place/p5.jpg);" ><a href="place/p6.html" style="text-decoration: none; color: #fff;">6</a></div>
+            <div class="box col-2" style="background-image: url(place/p6.jpg);" ><a href="place/p7.html" style="text-decoration: none; color: #fff;">7</a></div>
+        </div>
+    </div>
+</body>
+</html>

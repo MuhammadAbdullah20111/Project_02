@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us page</title>
+
+<style>
+ 
+    :root {
+            --white: #ddd;
+            --dark: #111;
+            --darkgrey: #474b4f;
+            --lightgrey: #6e6b70;
+            --lightgreen: #86c232;
+            --darkgreen: #61892f;
+            --transition: all 0.5s ease;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90vw;
+            margin: 0 auto;
+            border-radius: 5px;
+        background-color: #555;
+        padding: 10px;
+        margin: 0 auto;
+        font-weight: bold;
+        }
+        .column{
+        float: left;
+        width: 100%;
+        margin-top: 25px;
+        padding: 20px;
+        box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.773);
+        gap: 5px;
+    }
+        
+        .btn {
+            background: var(--darkgreen);
+            border: none;
+            display: block;
+            width: 0 15px;
+            text-align: center;
+            color: var(--darkgreen);
+            text-transform: uppercase;
+            background: transparent;
+            font-size: 15px 0;
+            padding: 12px;
+            border: 2px solid var(--darkgreen);
+            border-radius: 25px;
+            margin: 15px 0;
+            transition: var(--transition);
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: var(--darkgreen);
+            color: #fff;
+        }
+
+        .section-five {
+            margin: 40px;
+        }
+
+        .section-five .container div {
+            margin: 20px;
+        }
+
+        .contact-top {
+            text-align: center;
+        }
+
+        .contact-top h3 {
+            font-size: 28px;
+        }
+
+        .contact-top p {
+            font-weight: 300;
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        .contact-middle div {
+            text-align: center;
+            padding: 25px 0;
+            background: var(--dark);
+            color: #fff;
+        }
+
+        .contact-middle div span {
+            display: block;
+        }
+
+        .contact-icon {
+            font-size: 30px;
+        }
+
+        .contact-middle div span:nth-child(2) {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .contact-middle div p {
+            font-weight: 300;
+            opacity: 0.7;
+        }
+
+        .contact-bottom {
+            margin-top: 50px !important;
+        }
+
+        .form input[type="text"],
+        .form input[type="email"],
+        .form textarea {
+            width: 100%;
+            font-size: 16px;
+            padding: 10px 15px;
+            margin: 10px 0;
+            border: 1px solid var(--lightgreen);
+            outline: none;
+            border-radius: 5px;
+        }
+
+        .contact-bottom .form {
+            padding: 0 20px;
+        }
+
+        @media screen and (min-width:678px) {
+
+            /* section five */
+            .contact-middle {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-column-gap: 20px;
+            }
+        }
+</style>
+</head>
+<body  style=" background-color: rgb(188, 188, 188)" >
+    
+    <div class="container">
+        
+        <div style="text-align:center ; font-family: Arial, Helvetica, sans-serif ; ">
+        <h1>Contact Us</h1>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="front1.jpg" alt="404" style="width:100%;">
+            </div>
+            <div class="column">
+                <section class="section-five">
+                    <div >
+                        <div class="contact-top">
+                            <h3>CONTACT ME</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, exercitationem!
+                            </p>
+                        </div>
+                        <div class="contact-middle">
+                            <div>
+                                <span class="contact-icon">
+                                    <i class="fas fa-map-signs"></i>
+                                </span>
+                                <span>Address</span>
+                                <p>Main Street - 3456, karachi</p>
+                            </div>
+                            <div>
+                                <span class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </span>
+                                <span>Contact Number</span>
+                                <p>03161080924</p>
+                            </div>
+                            <div>
+                                <span class="contact-icon">
+                                    <i class="fas fa-paper-plane"></i>
+                                </span>
+                                <span>Email Address</span>
+                                <p>info@gmail.com</p>
+                            </div>
+                            <div>
+                                <span class="contact-icon">
+                                    <i class="fas fa-globe"></i>
+                                </span>
+                                <span>Web_Address</span>
+                                <p>www.mylab.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-bottom">
+                            <form class="form">
+                                <label for="fname">First Name</label>
+                                <input type="text" name="firstname" id="fname" placeholder="Your first name...">
+            
+                                <label for="lname">Last Name</label>
+                                <input type="text" name="lastname" id="lname" placeholder="Your last name...">
+            
+                                <label for="country">City</label>
+                                <select name="country" id="country">
+                                    <option value="Karachi">Karachi</option>
+                                    <option value="Lahore">Lahore</option>
+                                    <option value="Islamabad">Islamaabd</option>
+                                </select>
+                                <br><br>
+                                <label for="subject">Subject</label>
+                                <textarea name="subject" id="subject" placeholder="Write details" style="height: 170px;"></textarea>
+            
+                                <input type="submit" class="btn" value="SEND MESSAGE">
+                            </form>
+                        </div>
+                    </div>
+            
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
